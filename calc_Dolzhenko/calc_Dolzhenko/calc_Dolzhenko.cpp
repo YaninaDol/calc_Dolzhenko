@@ -24,6 +24,16 @@ int dev(int a, int b)
     int dev = a / b;
     return dev;
 }
+int less(int a, int b)
+{
+    if (a < b)return a;
+    else return b;
+}
+int more(int a, int b)
+{
+    if (a > b)return a;
+    else return b;
+}
 int main()
 {
     int a = 10;
