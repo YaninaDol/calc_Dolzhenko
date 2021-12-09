@@ -14,6 +14,16 @@ int minus(int a, int b)
     int minus= a - b;
     return minus;
 }
+int mnog(int a, int b)
+{
+    int mnog = a * b;
+    return mnog;
+}
+int dev(int a, int b)
+{
+    int dev = a / b;
+    return dev;
+}
 int main()
 {
     int a = 10;
