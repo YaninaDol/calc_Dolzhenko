@@ -34,6 +34,18 @@ int more(int a, int b)
     if (a > b)return a;
     else return b;
 }
+void div_zero(int a, int b)
+{
+    if (a!=0 && b != 0)
+    {
+        int dev = a / b;
+        cout << dev;
+    }
+    else
+    {
+        cout << " Error!";
+    }
+}
 int main()
 {
     int a = 10;
