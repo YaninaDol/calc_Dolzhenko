@@ -7,6 +7,12 @@ using namespace std;
 int plus(int a, int b)
 {
     int sum = a + b;
+    return sum;
+}
+int minus(int a, int b)
+{
+    int minus= a - b;
+    return minus;
 }
 int main()
 {
