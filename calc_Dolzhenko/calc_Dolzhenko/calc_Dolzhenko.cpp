@@ -30,9 +30,9 @@ int calc_Dolzhenko::getB()
 {
     return b;
 }
-int calc_Dolzhenko::my_plus(int a, int b)
+int calc_Dolzhenko::my_plus()
 {
-    int sum = a + b;
+    int sum = this->a + this->b;
     return sum;
 }
 int calc_Dolzhenko::minus(int a, int b)

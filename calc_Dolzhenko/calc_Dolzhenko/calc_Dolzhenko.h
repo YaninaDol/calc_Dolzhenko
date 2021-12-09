@@ -14,7 +14,7 @@ public:
 	
 	int getB();
 
-    int my_plus(int a, int b);
+    int my_plus();
 
     int minus(int a, int b);
    
