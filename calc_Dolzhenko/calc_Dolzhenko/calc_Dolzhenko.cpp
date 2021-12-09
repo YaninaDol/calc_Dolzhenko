@@ -2,41 +2,67 @@
 //
 
 #include <iostream>
+#include "calc_Dolzhenko.h"
 using namespace std;
 
-int plus(int a, int b)
+
+
+calc_Dolzhenko::calc_Dolzhenko()
+{
+    
+        a = 0;
+        b = 0;
+    
+}
+
+calc_Dolzhenko::calc_Dolzhenko(int new_a, int new_b)
+{
+    a = new_a;
+    b = new_b;
+}
+
+int calc_Dolzhenko::getA()
+{
+    return a;
+}
+
+int calc_Dolzhenko::getB()
+{
+    return b;
+}
+int calc_Dolzhenko::my_plus(int a, int b)
 {
     int sum = a + b;
     return sum;
 }
-int minus(int a, int b)
+int calc_Dolzhenko::minus(int a, int b)
 {
-    int minus= a - b;
+    int minus = a - b;
     return minus;
 }
-int mnog(int a, int b)
+int calc_Dolzhenko::mnog(int a, int b)
 {
     int mnog = a * b;
     return mnog;
 }
-int dev(int a, int b)
+int calc_Dolzhenko::dev(int a, int b)
 {
     int dev = a / b;
     return dev;
 }
-int less(int a, int b)
+int calc_Dolzhenko::less(int a, int b)
 {
     if (a < b)return a;
     else return b;
 }
-int more(int a, int b)
+int calc_Dolzhenko::more(int a, int b)
 {
     if (a > b)return a;
     else return b;
 }
-void div_zero(int a, int b)
+void calc_Dolzhenko::div_zero(int a, int b)
 {
-    if (a!=0 && b != 0)
+    if (a != 0 && b != 0)
     {
         int dev = a / b;
         cout << dev;
@@ -45,12 +71,5 @@ void div_zero(int a, int b)
     {
         cout << " Error!";
     }
-}
-int main()
-{
-    int a = 10;
-    int b = 5;
-
-   
 }
 
